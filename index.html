@@ -26,14 +26,16 @@
 
       <p>We will say lots of nice stuff with kids in mind</p>
 
-      <form class="name-form" action="index.html" method="post">
+      <form id="nameForm" action="index.html" method="post">
         <fieldset>
           <label for="name">What is your name?</label>
-          <input type="text" name="name" value="" placeholder="your name">
+          <input type="text" name="name" id="nameInput" placeholder="your name" required="true">
+
+          <button type="submit">Enter Your name!</button>
 
         </fieldset>
       </form>
-      
+
     </main>
 
 
