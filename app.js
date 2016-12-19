@@ -3,33 +3,41 @@
 var nameForm = document.getElementById('nameForm');
 var storyArray = [];
 
-
+// EVENT HANDLERS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function setName(event){
 
   event.preventDefault();
 
   var nameInput = document.getElementById('nameInput');
   var userName = event.target.nameInput.value;
+  var currentUser = userName;
 
   new UserStory(userName);
-  sendToLocalStorage(storyArray);
+  sendToLocalStorage('story', storyArray);
+  sendToLocalStorage('currentUser', currentUser);
 
-  console.log(userName, nameInput);
+  window.location.href = '/avatar.html';
 
 }
-// ***************************************** event listener for username *********************
+
+// ***************************************** event listeners *********************
 nameForm.addEventListener('submit', setName);
+
 // ******************************************************************************************
 
-function sendToLocalStorage(storyArray){
-  var stringifiedName = JSON.stringify(storyArray);
-  localStorage.setItem(storyArray[0].name, stringifiedName);
+function sendToLocalStorage(userKey, something){
+  var stringifiedName = JSON.stringify(something);
+  // var currentUserKey = JSON.stringify(userKey);
+  localStorage.setItem(userKey, stringifiedName);
 
-  console.log(stringifiedName);
+  // console.log(currentUserKey, stringifiedName);
 }
 
 function UserStory(userName) {
   this.name = userName,
+  this.avatar = 'null',
+  this.pathChosen = [],
+  this.thingsDone = []
 
-  storyArray.push(this);
+  storyArray.push(this)
 }
