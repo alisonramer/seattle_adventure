@@ -16,7 +16,7 @@ function setName(event){
   sendToLocalStorage('story', storyArray);
   sendToLocalStorage('currentUser', currentUser);
 
-  window.location.href = '/avatar.html';
+  window.location.href = 'avatar.html';
 
 }
 

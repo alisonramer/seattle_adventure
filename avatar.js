@@ -1,7 +1,7 @@
 // ID'S AND VARIABLES
 
 var avatarBox = document.getElementById('avatarBox');
-var stringifiedName = localStorage.getItem('"currentUser"');
+var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 console.log(stringifiedName, userName);
 
