@@ -1,6 +1,8 @@
 'use strict';
 // ******************************************* storing username for local storage ***************
 var nameForm = document.getElementById('nameForm');
+var storyArray = [];
+
 
 function setName(event){
 
@@ -9,7 +11,8 @@ function setName(event){
   var nameInput = document.getElementById('nameInput');
   var userName = event.target.nameInput.value;
 
-  sendToLocalStorage(userName);
+  new UserStory(userName);
+  sendToLocalStorage(storyArray);
 
   console.log(userName, nameInput);
 
@@ -18,10 +21,15 @@ function setName(event){
 nameForm.addEventListener('submit', setName);
 // ******************************************************************************************
 
-function sendToLocalStorage(userName){
-  var stringifiedName = JSON.stringify(userName);
-  localStorage.setItem(userName, stringifiedName);
+function sendToLocalStorage(storyArray){
+  var stringifiedName = JSON.stringify(storyArray);
+  localStorage.setItem(storyArray[0].name, stringifiedName);
 
   console.log(stringifiedName);
+}
 
+function UserStory(userName) {
+  this.name = userName,
+
+  storyArray.push(this);
 }
