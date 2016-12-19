@@ -44,7 +44,6 @@ main {
 main p {
   text-align: center;
   margin-top: 30px;
-  background-color: yellow;
 }
 
 ul {
@@ -62,15 +61,9 @@ li {
 }
 
 h1{
-  font-size: 30px;
-  /*border: 5px red solid;*/
+  font-size: 48px;
   margin-top: 100px;
 }
-
-p1  {
-  border: 5 px green solid;
-}
-
 footer {
   background-color: #E6EBE0;
   height: 150px;
