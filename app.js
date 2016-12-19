@@ -16,25 +16,28 @@ function setName(event){
   sendToLocalStorage('story', storyArray);
   sendToLocalStorage('currentUser', currentUser);
 
-  console.log(userName, nameInput);
+  window.location.href = '/avatar.html';
 
 }
+
 // ***************************************** event listeners *********************
 nameForm.addEventListener('submit', setName);
-
 
 // ******************************************************************************************
 
 function sendToLocalStorage(userKey, something){
   var stringifiedName = JSON.stringify(something);
-  var currentUserKey = JSON.stringify(userKey);
-  localStorage.setItem(currentUserKey, stringifiedName);
+  // var currentUserKey = JSON.stringify(userKey);
+  localStorage.setItem(userKey, stringifiedName);
 
-  console.log(currentUserKey, stringifiedName);
+  // console.log(currentUserKey, stringifiedName);
 }
 
 function UserStory(userName) {
   this.name = userName,
+  this.avatar = 'null',
+  this.pathChosen = [],
+  this.thingsDone = []
 
-  storyArray.push(this);
+  storyArray.push(this)
 }
