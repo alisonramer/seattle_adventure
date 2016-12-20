@@ -96,4 +96,7 @@ footer p {
 footer {
   background-color: #E6EBE0;
   height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }

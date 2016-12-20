@@ -1,21 +1,48 @@
 'use strict';
-
+var leftRandom = 0;
+var centerRandom = 0;
+var rightRandom = 0;
+var previouslyDisplayed =[];
 var chooseDestinationBox = document.getElementById('chooseDestinationBox');
 var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
-var destinationArray = ['seattleCenter.html', 'pikePlace.html'];
-var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg']
+var destinationArray = ['seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
+var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
 var destinationChoice;
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
+// var headerTextElement = document.getElementById('headerTextElement');
 
 // console.log(storyArray, userName, chooseDestinationBox);
+document.getElementById('headerTextElement').textContent = userName+' has escaped from the Zoo! Where do you want to go?';
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// ******************************** randomize the images ****************
+function randomizeNumber() {
+  leftRandom = Math.floor(Math.random() * 3);
+    console.log(previouslyDisplayed.indexOf(leftRandom))
+  while (previouslyDisplayed.indexOf(leftRandom) > -1) {
+    leftRandom = Math.floor(Math.random() * 3);
+  }
+  previouslyDisplayed.push(leftRandom);
+  centerRandom = Math.floor(Math.random() * 3);
+  while (previouslyDisplayed.indexOf(centerRandom) > -1) {
+    centerRandom = Math.floor(Math.random() * 3);
+  }
+  previouslyDisplayed.push(centerRandom);
+  rightRandom = Math.floor(Math.random() * 3);
+  while (previouslyDisplayed.indexOf(rightRandom) > -1) {
+    rightRandom = Math.floor(Math.random() * 3);
+  }
+  previouslyDisplayed.push(rightRandom);
+}
+
+
+// ***************************************************************************
 function sendToLocalStorage(userKey, something){
   var stringifiedName = JSON.stringify(something);
   // var currentUserKey = JSON.stringify(userKey);
@@ -23,11 +50,20 @@ function sendToLocalStorage(userKey, something){
 }
 
 function setChoices(){
-  left.src = imageArray[0];
-  center.src = imageArray[1];
-  right. src = imageArray[2];
+
+  left.src = imageArray[leftRandom];
+  center.src = imageArray[centerRandom];
+  right. src = imageArray[rightRandom];
 }
+
+randomizeNumber();
 setChoices();
+
+
+
+
+
+
 // EVENT HANDLERS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 function setDestination(event){
