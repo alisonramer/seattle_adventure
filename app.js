@@ -34,8 +34,7 @@ nameForm.addEventListener('submit', setName);
 function UserStory(userName) {
   this.name = userName,
   this.avatar = 'null',
-  this.pathChosen = [],
-  this.thingsDone = []
+  this.placesGone = [[]],
 
   storyArray.push(this)
 }
