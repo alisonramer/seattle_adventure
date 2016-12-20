@@ -25,13 +25,13 @@ a {
 a:link {
   color: #5CA4A9;
 }
-a:visited {
+a:hover{
   color: #9BC1BC;
 }
-a:hover{
+a:visited{
   color: #ED6A5A;
 }
-body {
+#body_index {
   background-image: url("img/background_splash.png");
 }
 main {
@@ -49,6 +49,7 @@ ul {
   position: relative;
   top: 70px;
   left: 850px;
+  width: 250px;
 }
 
 li {
