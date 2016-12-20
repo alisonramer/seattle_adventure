@@ -43,13 +43,14 @@ function setDestination(event){
     if(storyArray[i].name === userName){
       for (var j = -1; j < storyArray[i].placesGone.length; j++) {
 
-        if(storyArray[i].placesGone.includes(event.target.index) === false){
-          storyArray[i].placesGone.push(event.target.index);
+        if(storyArray[i].placesGone.includes(event.target.alt) === false){
+          storyArray[i].placesGone.push(event.target.alt);
         }
       }
     }
   }
   sendToLocalStorage('story', storyArray);
+
   // console.log(destinationArray[event.target.index]);
   if (destinationChoice === 'left'){
     window.location.href = destinationArray[0];
@@ -60,6 +61,7 @@ function setDestination(event){
   if (destinationChoice === 'right'){
     window.location.href = destinationArray[2];
   }
+
 }
 
 // EVENT LISTENERS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

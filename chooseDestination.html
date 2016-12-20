@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="chooseDestination.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
     <title>Seattle Adventure</title>
@@ -16,14 +17,29 @@
         <li><a href="index.html">New Story</a></li>
       </ul>
     </header>
-    <fieldset>
+
+    <section class="place_icons" id="chooseDestinationBox">
+      <div id="div1">
+        <img src="img/Seattle_Center.jpg" alt="0" id="seattleCenter">
+      </div>
+      <div id="div2">
+        <img src="img/Pike_Place.jpg" alt="1" id="pikePlace">
+      </div>
       <h1><span>Username</span> has escaped from the Zoo! Where do you want to go?</h1>
+
+      <div id="avatar">
+        <img src="img/avatars/Otter.png" alt="3">
+      </div>
+
+    </section>
+
+
       <section class="avatar_icons" id="chooseDestinationBox">
         <img src="http://placehold.it/200x200" index="0" id="left">
         <img src="http://placehold.it/200x200" index="1" id="center">
         <img src="http://placehold.it/200x200" index="2" id="right">
       </section>
-    </fieldset>
+
     <footer>Seattle Adventure Story &copy; 2016</footer>
 
     <script type="text/javascript" src="chooseDestination.js">
