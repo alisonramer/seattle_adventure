@@ -1,0 +1,36 @@
+section {
+  width: 900px;
+  height: 600px;
+  /*border: 3px black solid;*/
+  position: relative;
+}
+
+section div {
+  width: 300px;
+  height: 300px;
+}
+
+div img {
+  width: 100%;
+}
+
+#div2 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#avatar {
+  position: absolute;
+  left: 35%;
+  bottom: 0px;
+}
+
+h1 {
+  position: absolute;
+  top: 175px;
+  left: 90px;
+  font-size: 25px;
+
+
+}

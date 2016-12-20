@@ -27,15 +27,15 @@ function setDestination(event){
     if(storyArray[i].name === userName){
       for (var o = -1; o < storyArray[i].placesGone.length; o++) {
 
-        if(storyArray[i].placesGone.includes(event.target.index) === false){
-          storyArray[i].placesGone.push(event.target.index);
+        if(storyArray[i].placesGone.includes(event.target.alt) === false){
+          storyArray[i].placesGone.push(event.target.alt);
         }
       }
     }
   }
   sendToLocalStorage('story', storyArray);
-  // console.log(destinationArray[event.target.index]);
-  window.location.href = destinationArray[event.target.index];
+  // console.log(destinationArray[event.target.alt]);
+  window.location.href = destinationArray[event.target.alt];
 }
 
 // EVENT LISTENERS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
