@@ -2,14 +2,14 @@
   font-family: 'Oxygen', sans-serif;
 }
 header {
-  height: 150px;
+  height: 130px;
   position: relative;
   background-color: #E6EBE0;
 }
 #logo {
   margin-left: 90px;
   position: absolute;
-  top: 50px;
+  top: 40px;
   font-size: 24px;
   padding: 15px;
   width: 400px;
@@ -47,7 +47,7 @@ main p {
 
 ul {
   position: relative;
-  top: 80px;
+  top: 70px;
   left: 850px;
 }
 
@@ -86,6 +86,7 @@ button:hover {
 }
 footer p {
   font-family: 'Oxygen', sans-serif;
+  color: #5CA4A9;
   text-align: center;
   position: relative;
   top: 50px;
