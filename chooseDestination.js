@@ -11,8 +11,10 @@ var destinationChoice;
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
+// var headerTextElement = document.getElementById('headerTextElement');
 
 // console.log(storyArray, userName, chooseDestinationBox);
+document.getElementById('headerTextElement').textContent = userName+' has escaped from the Zoo! Where do you want to go?';
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
