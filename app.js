@@ -17,6 +17,17 @@ function setName(event){
   var userName = event.target.nameInput.value;
   var currentUser = userName;
 
+  for (var i = 0; i < storyArray.length; i++) {
+    if(storyArray[i].name.includes(userName) === true) {
+
+      sendToLocalStorage('story', storyArray);
+      sendToLocalStorage('currentUser', currentUser);
+      alert('Welcome Back '+userName+'!');
+      window.location.href = 'avatar.html';
+      return;
+    }
+  }
+
   new UserStory(userName);
   sendToLocalStorage('story', storyArray);
   sendToLocalStorage('currentUser', currentUser);
@@ -34,7 +45,7 @@ nameForm.addEventListener('submit', setName);
 function UserStory(userName) {
   this.name = userName,
   this.avatar = 'null',
-  this.placesGone = [[]],
+  this.placesGone = [],
 
   storyArray.push(this)
 }
