@@ -1,5 +1,8 @@
 'use strict';
-
+var leftRandom = 0;
+var centerRandom = 0;
+var rightRandom = 0;
+var previouslyDisplayed =[];
 var chooseDestinationBox = document.getElementById('chooseDestinationBox');
 var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
@@ -16,6 +19,27 @@ var center = document.getElementById('center');
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// ******************************** randomize the images ****************
+function randomizeNumber() {
+  leftRandom = Math.floor(Math.random() * 2);
+  while (previouslyDisplayed.indexOf(leftRandom) > -1) {
+    leftRandom = Math.floor(Math.random() * 2);
+  }
+  previouslyDisplayed.push(leftRandom);
+  centerRandom = Math.floor(Math.random() * 2);
+  while (previouslyDisplayed.indexOf(centerRandom) > -1) {
+    centerRandom = Math.floor(Math.random() * 2);
+  }
+  previouslyDisplayed.push(centerRandom);
+  rightRandom = Math.floor(Math.random() * 2);
+  while (previouslyDisplayed.indexOf(rightRandom) > -1) {
+    rightRandom = Math.floor(Math.random() * 2);
+  }
+  previouslyDisplayed.push(rightRandom);
+}
+
+
+// ***************************************************************************
 function sendToLocalStorage(userKey, something){
   var stringifiedName = JSON.stringify(something);
   // var currentUserKey = JSON.stringify(userKey);
@@ -23,11 +47,18 @@ function sendToLocalStorage(userKey, something){
 }
 
 function setChoices(){
-  left.src = imageArray[0];
-  center.src = imageArray[1];
-  right. src = imageArray[2];
+  randomizeNumber();
+  left.src = imageArray[leftRandom];
+  center.src = imageArray[centerRandom];
+  right. src = imageArray[rightRandom];
 }
 setChoices();
+
+
+
+
+
+
 // EVENT HANDLERS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 function setDestination(event){
