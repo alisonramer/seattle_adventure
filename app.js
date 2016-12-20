@@ -3,6 +3,11 @@
 var nameForm = document.getElementById('nameForm');
 var storyArray = [];
 
+if(localStorage.getItem('story')){
+  var stringifiedArray = localStorage.getItem('story');
+  storyArray = JSON.parse(stringifiedArray);
+}
+
 // **************************** EVENT HANDLERS ********************* //
 function setName(event){
 
@@ -33,4 +38,12 @@ function UserStory(userName) {
   this.thingsDone = []
 
   storyArray.push(this)
+}
+
+function sendToLocalStorage(userKey, something){
+  var stringifiedName = JSON.stringify(something);
+  // var currentUserKey = JSON.stringify(userKey);
+  localStorage.setItem(userKey, stringifiedName);
+
+  // console.log(currentUserKey, stringifiedName);
 }
