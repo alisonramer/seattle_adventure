@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="avatar.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
     <title>Select an Avatar</title>
   </head>
   <body>
+    <main>
+
     <header>
       <div id="logo">Seattle Adventure Story</div>
       <ul>
@@ -16,15 +19,23 @@
         <li><a href="index.html">New Story</a></li>
       </ul>
     </header>
-    <fieldset>
-      <h1>Hello, <span>Username</span>! Select an animal to start your Seattle adventure!</h1>
-      <section class="avatar_icons" id="avatarBox">
+
+
+    <section class="avatar_icons" id="avatarBox">
+      <div id="div1">
         <img src="img/avatars/Bear.png" alt="bear" id="bear">
+      </div>
+      <div id="div2">
         <img src="img/avatars/Otter.png" alt="otter" id="otter">
+      </div>
+      <div id="div3">
         <img src="img/avatars/Platypus.png" alt="platypus" id="platypus">
-      </section>
-    </fieldset>
+      </div>
+      <h1 id="headerTextElement"></h1>
+    </section>
+
     <footer>Seattle Adventure Story &copy; 2016</footer>
+    </main>
 
     <script type="text/javascript" src="avatar.js">
 

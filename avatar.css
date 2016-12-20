@@ -1,6 +1,6 @@
 section {
   width: 900px;
-  height: 500px;
+  height: 400px;
   border: 3px black solid;
   position: relative;
   margin: 0 auto;
@@ -32,15 +32,9 @@ div img {
   top: 0%;
 }
 
-#avatar {
-  position: absolute;
-  left: 35%;
-  bottom: 0%;
-}
-
 h1 {
   position: absolute;
-  top: 45%;
+  top: 75%;
   width: 100%;
   margin: 0 auto;
   font-size: 30px;
