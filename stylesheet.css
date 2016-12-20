@@ -1,5 +1,6 @@
 * {
   font-family: 'Oxygen', sans-serif;
+  outline: 1px black solid;
 }
 header {
   height: 130px;
@@ -31,13 +32,19 @@ a:hover{
 a:visited{
   color: #ED6A5A;
 }
+body {
+  position: relative;
+  outline: 1px black solid;
+}
+
 #body_index {
   background-image: url("img/background_splash.png");
 }
 main {
   width: 100%;
-  height: 500px;
+  height: 1500px;
   text-align: center;
+  outline: 1px black solid;
 }
 
 main p {
@@ -62,11 +69,18 @@ h1{
   font-size: 56px;
   margin-top: 100px;
   font-family: 'Oxygen', sans-serif;
+  outline: 1px black solid;
 }
 main p {
   margin-top: 50px;
   font-size: 24px;
   line-height: 1.4em;
+}
+main {
+  width: 100%;
+  height: 1500px;
+  text-align: center;
+  outline: 1px black solid;
 }
 fieldset {
   margin-top: 40px;
@@ -96,7 +110,5 @@ footer p {
 footer {
   background-color: #E6EBE0;
   height: 100px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+
 }
