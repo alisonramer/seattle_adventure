@@ -1,8 +1,9 @@
 section {
-  width: 900px;
-  height: 600px;
-  border: 3px black solid;
+  width: 1100px;
+  height: 500px;
+  border: none;
   position: relative;
+  margin: 0 auto;
 }
 
 section div {
@@ -14,24 +15,36 @@ div img {
   width: 100%;
 }
 
+#div1 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+#div3 {
+  position: absolute;
+  right: 0%;
+  top: 5%;
+}
+
 #div2 {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  left: 35%;
+  top: 0%;
 }
 
 #avatar {
   position: absolute;
   left: 35%;
-  bottom: 0px;
+  bottom: 0%;
 }
 
 h1 {
   position: absolute;
-  top: 175px;
-  left: 90px;
-  font-size: 25px;
-
+  top: 45%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
 
 }
 /**/
