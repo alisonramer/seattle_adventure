@@ -20,6 +20,7 @@ function setName(event){
   for (var i = 0; i < storyArray.length; i++) {
     if(storyArray[i].name.includes(userName) === true) {
 
+      storyArray[i].placesGone = [];
       sendToLocalStorage('story', storyArray);
       sendToLocalStorage('currentUser', currentUser);
       alert('Welcome Back '+userName+'!');
