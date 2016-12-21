@@ -12,7 +12,7 @@ padding-left: 5%;
 padding-bottom: 0%;
 }
 
-#seattleCenter {
+#heroImage {
   max-width: 800px;
   height: 500px;
   margin: 0 auto;
@@ -27,7 +27,7 @@ padding-bottom: 0%;
   padding-top: 5%;
 }
 
-.story_icons {
+.story_box {
   height: 10%;
   margin: 5% auto;
   max-width: 1115px;
@@ -70,16 +70,16 @@ div img {
   margin: 0 auto;
 }
 
-#spaceNeedle {
+#image1 {
   margin-right: 15px;
 }
 
-#fountain {
+#image2 {
   margin-left: 15px;
   display: inline-block right;
 }
 
-#solarBloom {
+#image3 {
   margin-right: 15px;
 }
 
