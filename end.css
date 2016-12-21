@@ -1,9 +1,19 @@
-main {
-  outline: 3px dotted orange;
-}
 .zoo {
   width: 400px;
+  padding: 10px;
 }
 .zooAvatar {
   width: 300px;
+}
+main {
+  display: inline-block;
+  height: 500px;
+}
+#avatar {
+  display: inline-block;
+  width: 300px;
+}
+#zooButton {
+  text-align: center;
+  padding: 30px;
 }
