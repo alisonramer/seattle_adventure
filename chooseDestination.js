@@ -9,7 +9,10 @@ var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
 var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
-var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg'];
+
+var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
+
+
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
