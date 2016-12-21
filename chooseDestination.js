@@ -20,15 +20,17 @@ var center = document.getElementById('center');
 
 for (var i = 0; i < storyArray.length; i++) {
   if(storyArray[i].name===userName){
-
-    if(storyArray[i].placesGone.length >= 3){
-      window.location.href = 'end.html'
-    }
-
+    console.log(storyArray[i].placesGone, storyArray[i].placesGone.length);
     document.getElementById('avatarImg').src = 'img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
+
+    if(storyArray[i].placesGone.length >= 3){
+      window.location.href = 'end.html';
+    }
   }
 }
+
+
 // var headerTextElement = document.getElementById('headerTextElement');
 
 // console.log(storyArray, userName, chooseDestinationBox);
@@ -83,17 +85,18 @@ function setDestination(event){
     return alert('Please click a destination image');
   }
 
-  for (var i = 0; i < storyArray.length; i++) {
+  // for (var i = 0; i < storyArray.length; i++) {
+  //
+  //   if(storyArray[i].name === userName){
+  //     for (var j = -1; j < storyArray[i].placesGone.length; j++) {
+  //
+  //       if(storyArray[i].placesGone.includes(event.target.alt) === false){
+  //         storyArray[i].placesGone.push(event.target.alt);
+  //       }
+  //     }
+  //   }
+  // }
 
-    if(storyArray[i].name === userName){
-      for (var j = -1; j < storyArray[i].placesGone.length; j++) {
-
-        if(storyArray[i].placesGone.includes(event.target.alt) === false){
-          storyArray[i].placesGone.push(event.target.alt);
-        }
-      }
-    }
-  }
   sendToLocalStorage('story', storyArray);
 
   // console.log(destinationArray[event.target.index]);

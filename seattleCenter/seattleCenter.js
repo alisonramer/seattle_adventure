@@ -11,15 +11,24 @@ for (var i = 0; i < storyArray.length; i++) {
   if(storyArray[i].name===userName){
     document.getElementById('avatarImg').src = '../img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
+    storyArray[i].placesGone.push('0');
+    console.log(storyArray[i].placesGone.length);
   }
 }
 
 function backToChoose(event) {
   event.preventDefault();
 
+
+  sendToLocalStorage('story', storyArray);
   window.location.href = '../chooseDestination.html';
 }
 
+function sendToLocalStorage(userKey, something){
+  var stringifiedName = JSON.stringify(something);
+  // var currentUserKey = JSON.stringify(userKey);
+  localStorage.setItem(userKey, stringifiedName);
+}
 
 backButton.addEventListener('click', backToChoose);
 console.log(currentAvatar);
