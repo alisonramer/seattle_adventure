@@ -75,7 +75,7 @@ setChoices();
 
 function setDestination(event){
   event.preventDefault();
- 
+
   destinationChoice = event.target.id;
   if (destinationChoice === 'chooseDestinationBox') {
     return alert('Please click a destination image');
