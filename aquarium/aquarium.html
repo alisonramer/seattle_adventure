@@ -10,31 +10,35 @@
     <title>Aqaurium</title>
   </head>
   <body>
-    <main>
       <header>
         <div id="logo">Seattle Adventure Story</div>
         <ul>
-          <li><a href="journal.html">Journal</a></li>
+          <li><a href="../journal.html">Journal</a></li>
           <li><a href="../index.html">New Story</a></li>
         </ul>
       </header>
-      <fieldset>
-        <h1>You have chosen the aquarium!</h1>
-        <p>The aquarium teaches us about marine creatures. </br> Let's visit the jellyfish, harbor seal, and octopus exhibits.</p>
-        <section class="aquarium" id="activitiesBox">
-          <img src="../img/jellyfish.jpg" alt="jellyfish" id="jellyfish">
-          <img src="../img/seals.jpg" alt="seals" id="seals">
-          <img src="../img/octopus.jpg" alt="octopus" id="octopus">
 
-          <div id="avatar">
-            <img src="" id = "avatarImg" alt="avatar">
-          </div>
-          <h2 id="backButton">Go to another place!</h2>
-        </section>
-      </fieldset>
+      <section class="aquarium" id="activitiesBox">
+        <h1>Let's explore the jellyfish, harbor seals, and ocotopus exhibits!</h1>
+        <div id="image1">
+          <img src="../img/jellyfish.jpg" alt="jellyfish" id="jellyfish" class="aquariumImage">
+        </div>
+        <div id="image2">
+          <img src="../img/seals.jpg" alt="seals" id="seals" class="aquariumImage">
+        </div>
+        <div id="image3">
+          <img src="../img/octopus.jpg" alt="octopus" id="octopus" class="aquariumImage">
+        </div>
+        <div id="avatar">
+            <img src="" id = "avatarImg" alt="avatar" class="aquariumAvatar">
+        </div>
+        <div class="aquariumButton">
+          <button id="backButton">Go to another place!</button>
+        </div>
+      </section>
 
-    </main>
-    <footer>Seattle Adventure Story &copy; 2016</footer>
+    <footer class="aquariumFooter">Seattle Adventure Story &copy; 2016</footer>
+
     <script type="text/javascript" src="aquarium.js"></script>
   </body>
 </html>

@@ -1,6 +1,46 @@
-#jellyfish, #seals, #octopus {
+section {
+  width: 1100px;
+  height: 600px;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+}
+div img {
   width: 300px;
-  height: 200px;
-  margin-left: 20px;
-  margin-top: 30px;
+}
+#image1 {
+  float: left;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+#image2 {
+  float: left;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+#image3 {
+  float: left;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.aquariumAvatar {
+  width: 250px;
+  margin-left: 40%;
+  margin-top: -30px;
+}
+.aquariumButton {
+  text-align: center;
+  padding: 15px;
+}
+.aquarium h1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Oxygen', sans-serif;
+}
+.aquarium {
+  margin-top: -40px;
+}
+.aquariumFooter {
+  width: 100%;
+  position: relative;
 }
