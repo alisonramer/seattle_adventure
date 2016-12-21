@@ -1,16 +1,8 @@
 * {
-outline: 1px solid green;
-}
 
-section {
-  width: 90%;
-  border: none;
-  position: relative;
-  margin: 0 auto;
 }
 
 h1 {
-  position: relative;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -30,10 +22,16 @@ padding-bottom: 5%;
 }
 
 .textContainer {
-  max-width: 900px;
+  max-width: 658px;
   display: inline-block;
   vertical-align: top;
   padding-top: 5%;
+}
+
+.story_icons {
+  height: 10%;
+  margin: 5% auto;
+  max-width: 1115px;
 }
 
 h2 {
@@ -57,14 +55,23 @@ div img {
 
 #div1 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
+
 }
 
 #div2 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
+
 }
 
 #div3 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
+
 }
 
 #spaceNeedle {
@@ -80,12 +87,6 @@ div img {
   margin-right: 15px;
 }
 
-.story_icons {
-  height: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 #avatarImg {
   position: absolute;
   left: 10%;
@@ -96,9 +97,9 @@ div img {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 1240px) {
+/*@media only screen and (max-width : 1240px) {
   .textContainer {
     max-width: 500px;
-  }
+  }*/
 /* Styles */
-}
+/*}*/
