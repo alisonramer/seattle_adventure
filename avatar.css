@@ -1,7 +1,7 @@
 section {
   width: 900px;
   height: 400px;
-  border: 3px black solid;
+  /*border: 3px black solid;*/
   position: relative;
   margin: 0 auto;
 }

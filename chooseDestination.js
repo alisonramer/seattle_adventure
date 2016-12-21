@@ -8,23 +8,30 @@ var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
-var destinationArray = ['seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
+var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
 var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
 var destinationChoice;
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
+
+for (var i = 0; i < storyArray.length; i++) {
+
+  if(storyArray[i].name===userName){
+    document.getElementById('avatarImg').src = 'img/avatars/' +storyArray[i].avatar +'.png';
+    var currentAvatar = storyArray[i].avatar;
+  }
+}
 // var headerTextElement = document.getElementById('headerTextElement');
 
 // console.log(storyArray, userName, chooseDestinationBox);
-document.getElementById('headerTextElement').textContent = userName+' has escaped from the Zoo! Where do you want to go?';
+document.getElementById('headerTextElement').textContent = currentAvatar+' has escaped from the Zoo! Where do you want to go?';
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // ******************************** randomize the images ****************
 function randomizeNumber() {
   leftRandom = Math.floor(Math.random() * 3);
-    console.log(previouslyDisplayed.indexOf(leftRandom))
   while (previouslyDisplayed.indexOf(leftRandom) > -1) {
     leftRandom = Math.floor(Math.random() * 3);
   }
