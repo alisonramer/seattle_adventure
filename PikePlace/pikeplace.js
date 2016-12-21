@@ -12,7 +12,6 @@ for (var i = 0; i < storyArray.length; i++) {
     document.getElementById('avatarImg').src = '../img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
     storyArray[i].placesGone.push('1');
-    console.log(storyArray[i].placesGone.length);
   }
 }
 
@@ -25,7 +24,6 @@ function backToChoose(event) {
 
 function sendToLocalStorage(userKey, something){
   var stringifiedName = JSON.stringify(something);
-  // var currentUserKey = JSON.stringify(userKey);
   localStorage.setItem(userKey, stringifiedName);
 }
 

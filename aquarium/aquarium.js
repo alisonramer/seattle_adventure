@@ -12,7 +12,6 @@ for (var i = 0; i < storyArray.length; i++) {
     document.getElementById('avatarImg').src = '../img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
     storyArray[i].placesGone.push('2');
-    console.log(storyArray[i].placesGone.length);
   }
 }
 
@@ -30,4 +29,3 @@ function sendToLocalStorage(userKey, something){
 }
 
 backButton.addEventListener('click', backToChoose);
-console.log(currentAvatar);
