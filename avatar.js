@@ -31,8 +31,6 @@ function setAvatar(event){
   if(event.target.id === 'avatarBox'){
     return alert('Please pick your favortite animal.');
   }
-  console.log(event.target.id);
-
   for (var i = 0; i < storyArray.length; i++) {
     if(storyArray[i].name === userName){
       storyArray[i].avatar = event.target.id;
