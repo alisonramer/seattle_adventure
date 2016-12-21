@@ -79,17 +79,17 @@ function setDestination(event){
     return alert('Please click a destination image');
   }
 
-  for (var i = 0; i < storyArray.length; i++) {
-
-    if(storyArray[i].name === userName){
-      for (var j = -1; j < storyArray[i].placesGone.length; j++) {
-
-        if(storyArray[i].placesGone.includes(event.target.alt) === false){
-          storyArray[i].placesGone.push(event.target.alt);
-        }
-      }
-    }
-  }
+  // for (var i = 0; i < storyArray.length; i++) {
+  //
+  //   if(storyArray[i].name === userName){
+  //     for (var j = -1; j < storyArray[i].placesGone.length; j++) {
+  //
+  //       if(storyArray[i].placesGone.includes(event.target.alt) === false){
+  //         storyArray[i].placesGone.push(event.target.alt);
+  //       }
+  //     }
+  //   }
+  // }
 
   sendToLocalStorage('story', storyArray);
 
