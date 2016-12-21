@@ -9,15 +9,22 @@ var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
 var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
+
 var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
-var destinationChoice;
+
+
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
 
-for (var i = 0; i < storyArray.length; i++) {
 
+for (var i = 0; i < storyArray.length; i++) {
   if(storyArray[i].name===userName){
+
+    if(storyArray[i].placesGone.length >= 3){
+      window.location.href = 'end.html'
+    }
+
     document.getElementById('avatarImg').src = 'img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
   }
@@ -66,17 +73,12 @@ function setChoices(){
 randomizeNumber();
 setChoices();
 
-
-
-
-
-
 // EVENT HANDLERS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 function setDestination(event){
   event.preventDefault();
 
-  destinationChoice = event.target.id;
+  var destinationChoice = event.target.id;
   if (destinationChoice === 'chooseDestinationBox') {
     return alert('Please click a destination image');
   }
