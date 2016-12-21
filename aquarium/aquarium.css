@@ -1,3 +1,10 @@
+section {
+  width: 1100px;
+  height: 600px;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+}
 div img {
   width: 300px;
 }
@@ -32,4 +39,8 @@ div img {
 }
 .aquarium {
   margin-top: -40px;
+}
+.aquariumFooter {
+  width: 100%;
+  position: relative;
 }
