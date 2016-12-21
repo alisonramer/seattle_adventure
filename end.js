@@ -10,6 +10,8 @@ var left = document.getElementById('left');
 var right = document.getElementById('right');
 var center = document.getElementById('center');
 
+var goToJournal = document.getElementById('goToJournalButton');
+
 for (var i = 0; i < storyArray.length; i++) {
 
   if(storyArray[i].name===userName){
@@ -22,3 +24,11 @@ for (var i = 0; i < storyArray.length; i++) {
 left.src = imageArray[placesGone[0]];
 center.src = imageArray[placesGone[1]];
 right. src = imageArray[placesGone[2]];
+
+function goToJournalFunction(event) {
+  event.preventDefault();
+
+  window.location.href = 'journal.html';
+}
+
+goToJournal.addEventListener('click', goToJournalFunction);
