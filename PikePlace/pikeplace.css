@@ -47,4 +47,9 @@ h1 {
   text-align: center;
 
 }
+
+h2 {
+  border: 3px black solid;
+  text-align: center;
+}
 /**/
