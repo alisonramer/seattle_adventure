@@ -8,9 +8,9 @@ var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
-var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html' ];
+var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html', 'gasworks/gasworks.html' ,'alki/alki.html','locks/locks.html', 'lincoln/lincoln.html', 'lakeunion/lakeunion.html'];
 
-var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
+var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg']
 
 
 var left = document.getElementById('left');
@@ -40,19 +40,19 @@ document.getElementById('headerTextElement').textContent = currentAvatar+' has e
 
 // ******************************** randomize the images ****************
 function randomizeNumber() {
-  leftRandom = Math.floor(Math.random() * 3);
+  leftRandom = Math.floor(Math.random() * 8);
   while (previouslyDisplayed.indexOf(leftRandom) > -1) {
-    leftRandom = Math.floor(Math.random() * 3);
+    leftRandom = Math.floor(Math.random() * 8);
   }
   previouslyDisplayed.push(leftRandom);
-  centerRandom = Math.floor(Math.random() * 3);
+  centerRandom = Math.floor(Math.random() * 8);
   while (previouslyDisplayed.indexOf(centerRandom) > -1) {
-    centerRandom = Math.floor(Math.random() * 3);
+    centerRandom = Math.floor(Math.random() * 8);
   }
   previouslyDisplayed.push(centerRandom);
-  rightRandom = Math.floor(Math.random() * 3);
+  rightRandom = Math.floor(Math.random() * 8);
   while (previouslyDisplayed.indexOf(rightRandom) > -1) {
-    rightRandom = Math.floor(Math.random() * 3);
+    rightRandom = Math.floor(Math.random() * 8);
   }
   previouslyDisplayed.push(rightRandom);
 }
