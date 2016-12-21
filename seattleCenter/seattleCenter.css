@@ -1,21 +1,22 @@
+* {
+outline: 1px solid green;
+}
+
 section {
-  width: 1100px;
-  height: 500px;
+  width: 90%;
   border: none;
   position: relative;
   margin: 0 auto;
 }
 
 h1 {
-  position: absolute;
-  margin: 0 auto;
+  position: relative;
   font-size: 30px;
   text-align: center;
-
 }
 
-#Welcome{
-padding-left: 10%;
+#Welcome {
+padding-left: 5%;
 padding-bottom: 5%;
 }
 
@@ -23,9 +24,15 @@ padding-bottom: 5%;
   width: 800px;
   height: 500px;
   margin: 0 auto;
-  float: none;
   display: block;
   padding: 5%;
+}
+
+.textContainer {
+  max-width: 700px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5%;
 }
 
 p {
@@ -33,11 +40,22 @@ p {
   padding: 20px;
 }
 
-p img {
-  width: 100%;
-  width: 400px;
+div img {
+  max-width: 400px;
   height: 300px;
-  float: left;
+  display: inline-block;
+}
+
+#div1 {
+  padding-top: 20px;
+}
+
+#div2 {
+  padding-top: 20px;
+}
+
+#div3 {
+  padding-top: 20px;
 }
 
 #spaceNeedle {
@@ -45,8 +63,8 @@ p img {
 }
 
 #fountain {
-  float: right;
   margin-left: 15px;
+  display: inline-block right;
 }
 
 #solarBloom {
@@ -54,12 +72,24 @@ p img {
 }
 
 .story_icons {
-  border: 5px solid lightcoral;
-  height: 1000px;
+  height: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-#avatar {
+#avatarImg {
   position: absolute;
-  left: 0%;
-  top: 50%;
+  left: 10%;
+  top: 80%;
+  width: 300px;
+  height: 300px%;
+  clear: both;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 1240px) {
+  .textContainer {
+    max-width: 500px;
+  }
+/* Styles */
 }
