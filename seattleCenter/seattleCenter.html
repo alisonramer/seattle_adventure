@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="seattleCenter.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
     <title>Seattle Adventure</title>
   </head>
-  <body>
+  <body id="body_index">
+    <main>
+
     <header>
       <div id="logo">Seattle Adventure Story</div>
       <ul>
@@ -16,16 +19,28 @@
         <li><a href="index.html">New Story</a></li>
       </ul>
     </header>
-    <fieldset>
-      <h1><span>Username</span> has escaped from the Zoo! Where do you want to go?</h1>
+
       <section class="avatar_icons" id="chooseDestinationBox">
-        <img src="img/Space_Needle.jpg" alt="0" id="spaceNeedle">
-        <img src="img/Fountain.jpeg" alt="1" id="fountain">
-        <img src="img/Flowers.jpeg" alt="2" id="flowers">
+        <h1 id="headerTextsElement"></h1>
+        <div id="div1">
+          <img src="" alt="random photo" id="left">
+        </div>
+        <div id="div2">
+          <img src="" alt="random photo" id="center">
+        </div>
+        <div id="div3">
+          <img src="" alt="random photo" id="right">
+        </div>
+        <h1 id="headerTextElement"></h1>
+
+        <div id="avatar">
+          <img src="img/avatars/Otter.png" alt="3">
+        </div>
 
       </section>
-    </fieldset>
+
     <footer>Seattle Adventure Story &copy; 2016</footer>
+  </main>
 
     <script type="text/javascript" src="seattleCenter.js">
 
