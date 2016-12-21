@@ -11,11 +11,13 @@
   text-align: left;
   height: 250px;
   margin-right: 50px;
+  vertical-align: middle;
 }
+
 #avatarImg {
   width: 300px;
   float: right;
-  margin-right: 500px;
+  margin-right: 450px;
 }
 h1 {
   padding-bottom: 10px;
