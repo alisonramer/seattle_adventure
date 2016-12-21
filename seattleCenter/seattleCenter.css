@@ -13,6 +13,7 @@ h1 {
   position: relative;
   font-size: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 #Welcome {
@@ -21,7 +22,7 @@ padding-bottom: 5%;
 }
 
 #seattleCenter {
-  width: 800px;
+  max-width: 800px;
   height: 500px;
   margin: 0 auto;
   display: block;
@@ -29,15 +30,23 @@ padding-bottom: 5%;
 }
 
 .textContainer {
-  max-width: 700px;
+  max-width: 900px;
   display: inline-block;
   vertical-align: top;
   padding-top: 5%;
 }
 
+h2 {
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+}
+
 p {
+  max-width: 900px;
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 
 div img {
@@ -47,15 +56,15 @@ div img {
 }
 
 #div1 {
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 #div2 {
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 #div3 {
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 #spaceNeedle {

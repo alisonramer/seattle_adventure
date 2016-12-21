@@ -23,7 +23,7 @@ function setName(event){
       storyArray[i].placesGone = [];
       sendToLocalStorage('story', storyArray);
       sendToLocalStorage('currentUser', currentUser);
-      alert('Welcome Back '+userName+'!');
+      // alert('Welcome Back '+userName+'!');
       window.location.href = 'avatar.html';
       return;
     }
