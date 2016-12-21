@@ -1,1 +1,50 @@
-div.
+section {
+  width: 1100px;
+  height: 500px;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+section div {
+  width: 300px;
+  height: 300px;
+}
+
+div img {
+  width: 100%;
+}
+
+#div1 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+#div3 {
+  position: absolute;
+  right: 0%;
+  top: 5%;
+}
+
+#div2 {
+  position: absolute;
+  left: 35%;
+  top: 0%;
+}
+
+#avatar {
+  position: absolute;
+  left: 35%;
+  bottom: 0%;
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+
+}
+/**/

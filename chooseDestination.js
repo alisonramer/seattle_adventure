@@ -75,7 +75,7 @@ setChoices();
 
 function setDestination(event){
   event.preventDefault();
-
+ 
   destinationChoice = event.target.id;
   if (destinationChoice === 'chooseDestinationBox') {
     return alert('Please click a destination image');
@@ -96,13 +96,13 @@ function setDestination(event){
 
   // console.log(destinationArray[event.target.index]);
   if (destinationChoice === 'left'){
-    window.location.href = destinationArray[0];
+    window.location.href = destinationArray[leftRandom];
   }
   if (destinationChoice === 'center'){
-    window.location.href = destinationArray[1];
+    window.location.href = destinationArray[centerRandom];
   }
   if (destinationChoice === 'right'){
-    window.location.href = destinationArray[2];
+    window.location.href = destinationArray[rightRandom];
   }
 
 }
