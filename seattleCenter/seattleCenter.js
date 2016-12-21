@@ -17,6 +17,14 @@ for (var i = 0; i < storyArray.length; i++) {
 function backToChoose(event) {
   event.preventDefault();
 
+  for (var i = 0; i < storyArray.length; i++) {
+    if(storyArray[i].name === userName){
+      if(storyArray[i].placesGone.length >= 3){
+        window.location.href = 'end.html'
+      }
+    }
+  }
+
   window.location.href = '../chooseDestination.html';
 }
 
