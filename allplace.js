@@ -25,7 +25,7 @@ function backToChoose(event) {
   event.preventDefault();
 
   sendToLocalStorage('story', storyArray);
-  window.location.href = '../chooseDestination.html';
+  window.location.href = '../choosedestination.html';
 }
 
 function sendToLocalStorage(userKey, something){
