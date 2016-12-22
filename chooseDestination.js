@@ -24,7 +24,7 @@ for (var i = 0; i < storyArray.length; i++) {
     document.getElementById('avatarImg').src = 'img/avatars/' +storyArray[i].avatar +'.png';
     var currentAvatar = storyArray[i].avatar;
 
-    if(storyArray[i].placesGone.length >= 42){
+    if(storyArray[i].placesGone.length >= 3){
       window.location.href = 'end.html';
     }
   }
