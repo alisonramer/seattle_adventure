@@ -2,7 +2,7 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 header {
-  height: 130px;
+  height: 120px;
   position: relative;
   background-color: #E6EBE0;
 }
@@ -33,6 +33,7 @@ a:visited{
 }
 #background {
   background-image: url("img/background_splash.png");
+  max-width: 1300px;
 }
 main {
   width: 100%;
@@ -80,10 +81,15 @@ button {
 button:hover {
   background-color: #ED6A5A;
 }
+
 footer {
   font-family: 'Oxygen', sans-serif;
   color: #5CA4A9;
   text-align: center;
   background-color: #E6EBE0;
-  height: 50px;
+  height: 100px;
+}
+
+footer p {
+  padding-top: 20px;
 }
