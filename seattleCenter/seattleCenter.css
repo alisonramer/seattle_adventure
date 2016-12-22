@@ -1,16 +1,7 @@
 * {
-outline: 1px solid green;
-}
-
-section {
-  width: 90%;
-  border: none;
-  position: relative;
-  margin: 0 auto;
 }
 
 h1 {
-  position: relative;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -18,22 +9,28 @@ h1 {
 
 #Welcome {
 padding-left: 5%;
-padding-bottom: 5%;
+padding-bottom: 0%;
 }
 
-#seattleCenter {
+#heroImage {
   max-width: 800px;
   height: 500px;
   margin: 0 auto;
   display: block;
-  padding: 5%;
+  padding: 3%;
 }
 
 .textContainer {
-  max-width: 900px;
+  max-width: 658px;
   display: inline-block;
   vertical-align: top;
   padding-top: 5%;
+}
+
+.story_box {
+  height: 10%;
+  margin: 5% auto;
+  max-width: 1115px;
 }
 
 h2 {
@@ -57,33 +54,33 @@ div img {
 
 #div1 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 #div2 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 #div3 {
   padding-top: 5%;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-#spaceNeedle {
+#image1 {
   margin-right: 15px;
 }
 
-#fountain {
+#image2 {
   margin-left: 15px;
   display: inline-block right;
 }
 
-#solarBloom {
+#image3 {
   margin-right: 15px;
-}
-
-.story_icons {
-  height: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 #avatarImg {
@@ -92,13 +89,10 @@ div img {
   top: 80%;
   width: 300px;
   height: 300px%;
-  clear: both;
 }
 
-/* Smartphones (portrait) ----------- */
+ Smartphones (portrait) ----------- *
 @media only screen and (max-width : 1240px) {
   .textContainer {
     max-width: 500px;
   }
-/* Styles */
-}
