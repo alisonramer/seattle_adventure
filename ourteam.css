@@ -1,0 +1,43 @@
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+main {
+  height: 10%;
+  margin: 5% auto;
+  max-width: 1115px;
+}
+div {
+  padding: 5px;
+  width: 900px;
+}
+h3 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+}
+
+article p {
+  font-size: 20px;
+  text-align: left;
+  max-width: 900px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.teampic {
+  max-width: 400px;
+  height: 300px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+.team {
+  display: inline-block;
+  margin: 0 auto;
+}
+ Smartphones (portrait) ----------- *
+@media only screen and (max-width : 1240px) {
+  .textContainer {
+    max-width: 500px;
+  }
