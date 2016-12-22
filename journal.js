@@ -43,14 +43,14 @@ thirdPlaceText.textContent = 'Finally ' +userName+' '+currentAvatar+' went to ' 
 console.log(userName, currentAvatar, placesGone);
 
 firstPlace.src = imageArray[placesGone[0]];
-firstPlace1.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][0];
-firstPlace2.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][1];
-firstPlace3.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][2];
+// firstPlace1.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][0];
+// firstPlace2.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][1];
+// firstPlace3.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][2];
 secondPlace.src = imageArray[placesGone[1]];
-secondPlace1.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][0];
-secondPlace2.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][1];
-secondPlace3.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][2];
+// secondPlace1.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][0];
+// secondPlace2.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][1];
+// secondPlace3.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][2];
 thirdPlace.src = imageArray[placesGone[2]];
-thirdPlace1.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][0];
-thirdPlace2.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][1];
-thirdPlace3.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][2];
+// thirdPlace1.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][0];
+// thirdPlace2.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][1];
+// thirdPlace3.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][2];
