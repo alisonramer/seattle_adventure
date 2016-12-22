@@ -10,7 +10,7 @@ var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
 // console.log(storyArray)
-document.getElementById('headerTextElement').textContent = 'Who has escaped from the zoo?';
+document.getElementById('headerTextElement').textContent = 'Which friend from the zoo gets to explore Seattle today?';
 
 
 // **************************** FUNCTIONS ********************* //
