@@ -38,7 +38,7 @@ function setAvatar(event){
   }
 
   sendToLocalStorage('story', storyArray);
-  window.location.href = 'chooseDestination.html'
+  window.location.href = 'choosedestination.html'
 }
 
 // **************************** EVENT LISTENERS ********************* //
