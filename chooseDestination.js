@@ -30,10 +30,8 @@ for (var i = 0; i < storyArray.length; i++) {
   }
 }
 
-
 // var headerTextElement = document.getElementById('headerTextElement');
 
-// console.log(storyArray, userName, chooseDestinationBox);
 document.getElementById('headerTextElement').textContent = currentAvatar+' has escaped from the Zoo! Where do you want to go?';
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -61,7 +59,6 @@ function randomizeNumber() {
 // ***************************************************************************
 function sendToLocalStorage(userKey, something){
   var stringifiedName = JSON.stringify(something);
-  // var currentUserKey = JSON.stringify(userKey);
   localStorage.setItem(userKey, stringifiedName);
 }
 
@@ -69,6 +66,7 @@ function setChoices(){
 
   left.src = imageArray[leftRandom];
   center.src = imageArray[centerRandom];
+
   right. src = imageArray[rightRandom];
 }
 
@@ -85,32 +83,35 @@ function setDestination(event){
     return alert('Please click a destination image');
   }
 
-  // for (var i = 0; i < storyArray.length; i++) {
-  //
-  //   if(storyArray[i].name === userName){
-  //     for (var j = -1; j < storyArray[i].placesGone.length; j++) {
-  //
-  //       if(storyArray[i].placesGone.includes(event.target.alt) === false){
-  //         storyArray[i].placesGone.push(event.target.alt);
-  //       }
-  //     }
-  //   }
-  // }
-
-  sendToLocalStorage('story', storyArray);
-
-  // console.log(destinationArray[event.target.index]);
   if (destinationChoice === 'left'){
+    for (var i = 0; i < storyArray.length; i++) {
+      if(storyArray[i].name === userName){
+        storyArray[i].placesGone.push(leftRandom);
+      }
+    }
     window.location.href = destinationArray[leftRandom];
   }
+
   if (destinationChoice === 'center'){
+    for (var j = 0; j < storyArray.length; j++) {
+      if(storyArray[j].name === userName){
+        storyArray[j].placesGone.push(leftRandom);
+      }
+    }
     window.location.href = destinationArray[centerRandom];
   }
+
   if (destinationChoice === 'right'){
+    for (var k = 0; k < storyArray.length; k++) {
+      if(storyArray[k].name === userName){
+        storyArray[k].placesGone.push(leftRandom);
+      }
+    }
     window.location.href = destinationArray[rightRandom];
   }
-
+  sendToLocalStorage('story', storyArray);
 }
+
 
 // EVENT LISTENERS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
