@@ -4,7 +4,7 @@ var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
-var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg']
+var imageArray = ['img/seattle_center.jpg', 'img/pike_place.jpg', 'img/aquarium.jpg']
 
 var left = document.getElementById('left');
 var right = document.getElementById('right');
