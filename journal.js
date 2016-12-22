@@ -4,16 +4,27 @@ var stringifiedName = localStorage.getItem('currentUser');
 var userName = JSON.parse(stringifiedName);
 var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
-var imageArray = ['img/seattleCenter/Seattle_Center.jpg', 'img/pikePlace/Pike_Place.jpg', 'img/aquarium/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg']
+var imageArray = ['img/seattleCenter/Seattle_Center.jpg', 'img/pikePlace/Pike_Place.jpg', 'img/aquarium/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg'];
 var placeNamesArray = ['Seattle Center', 'Pike Place', 'The Aquarium', 'Gasworks', 'Alki Beach', 'The Locks', 'Lincoln Park', 'Lake Union'];
+var imageArraySubPlaces =[['Fountain', 'Seattle_Center', 'sonicBloom'], ['pig', 'Magic_Market', 'Flowers'], ['jellyfish', 'seals', 'octopus'], ['arches', 'kite', 'hill'], ['kayak', 'lighthouse', 'kayak'], ['chinook', 'spillway', 'ladder'], ['playground', 'pool', 'oceanview'], ['boats', 'foutains', 'boatpond']];
+var imagePaths = ['img/seattleCenter/', 'img/pikePlace/', 'img/auaarium', 'img/gasworks/', 'img/alki/', 'ig/locks', 'img/lincoln/', 'img/lakeunion/'];
 
 var headerId = document.getElementById('headerId');
 var firstPlaceText = document.getElementById('firstPlaceText');
 var secondPlaceText = document.getElementById('secondPlaceText');
 var thirdPlaceText = document.getElementById('thirdPlaceText');
 var firstPlace = document.getElementById('firstPlace');
+var firstPlace1 = document.getElementById('firstPlace1');
+var firstPlace2 = document.getElementById('firstPlace2');
+var firstPlace3 = document.getElementById('firstPlace3');
 var secondPlace = document.getElementById('secondPlace');
+var secondPlace1 = document.getElementById('secondPlace1');
+var secondPlace2 = document.getElementById('secondPlace2');
+var secondPlace3 = document.getElementById('secondPlace3');
 var thirdPlace = document.getElementById('thirdPlace');
+var thirdPlace1 = document.getElementById('thirdPlace1');
+var thirdPlace2 = document.getElementById('thirdPlace2');
+var thirdPlace3 = document.getElementById('thirdPlace3');
 
 for (var i = 0; i < storyArray.length; i++) {
 
@@ -24,13 +35,22 @@ for (var i = 0; i < storyArray.length; i++) {
   }
 }
 
-headerId.textContent = userName+' the '+currentAvatar+' has been to many places today!'
-firstPlaceText.textContent = 'First '+userName+' the '+currentAvatar+ ' went to ' +placeNamesArray[placesGone[0]]+'!';
-secondPlaceText.textContent = 'Then '+userName+' the '+currentAvatar+' went to ' +placeNamesArray[placesGone[1]]+'!';
-thirdPlaceText.textContent = 'Finally ' +userName+' the '+currentAvatar+' went to ' +placeNamesArray[placesGone[2]]+'!';
+headerId.textContent = userName+' '+currentAvatar+' has been to many places today!'
+firstPlaceText.textContent = 'First '+userName+' '+currentAvatar+ ' went to ' +placeNamesArray[placesGone[0]]+'!';
+secondPlaceText.textContent = 'Then '+userName+' '+currentAvatar+' went to ' +placeNamesArray[placesGone[1]]+'!';
+thirdPlaceText.textContent = 'Finally ' +userName+' '+currentAvatar+' went to ' +placeNamesArray[placesGone[2]]+'!';
 
 console.log(userName, currentAvatar, placesGone);
 
 firstPlace.src = imageArray[placesGone[0]];
+firstPlace1.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][0]+'.jpg';
+firstPlace2.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][1]+'.jpg';
+firstPlace3.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][2]+'.jpg';
 secondPlace.src = imageArray[placesGone[1]];
+secondPlace1.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][0]+'.jpg';
+secondPlace2.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][1]+'.jpg';
+secondPlace3.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][2]+'.jpg';
 thirdPlace.src = imageArray[placesGone[2]];
+thirdPlace1.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][0]+'.jpg';
+thirdPlace2.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][1]+'.jpg';
+thirdPlace3.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][2]+'.jpg';
