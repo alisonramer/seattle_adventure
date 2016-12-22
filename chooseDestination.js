@@ -10,7 +10,7 @@ var stringifiedArray = localStorage.getItem('story');
 var storyArray = JSON.parse(stringifiedArray);
 var destinationArray = ['seattleCenter/seattleCenter.html', 'PikePlace/pikePlace.html', 'aquarium/aquarium.html', 'gasworks/gasworks.html' ,'alki/alki.html','locks/locks.html', 'lincoln/lincoln.html', 'lakeunion/lakeunion.html'];
 
-var imageArray = ['img/Seattle_Center.jpg', 'img/Pike_Place.jpg', 'img/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg']
+var imageArray = ['img/seattleCenter/Seattle_Center.jpg', 'img/pikePlace/Pike_Place.jpg', 'img/aquarium/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg']
 
 
 var left = document.getElementById('left');
