@@ -9,7 +9,7 @@ h1 {
 }
 article img {
   max-width: 400px;
-  height: 300px;
+  height: 200px;
   display: inline-block;
   padding: 20px;
 }
@@ -38,3 +38,8 @@ article img {
 footer {
   clear: both;
 }
+
+/*#secondPlace {
+  /*float: right;*/
+
+}*/
