@@ -7,7 +7,7 @@ var storyArray = JSON.parse(stringifiedArray);
 var imageArray = ['img/seattlecenter/seattle_center.jpg', 'img/pikeplace/pike_place.jpg', 'img/aquarium/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg'];
 var placeNamesArray = ['Seattle Center', 'Pike Place', 'The Aquarium', 'Gasworks', 'Alki Beach', 'The Locks', 'Lincoln Park', 'Lake Union'];
 var imageArraySubPlaces =[['fountain.jpeg', 'seattle_center.jpg', 'sonicbloom.jpg'], ['pig,jpg', 'magic_market.jpeg', 'flowers.jpeg'], ['jellyfish.jpg', 'seals.jpg', 'octopus.jpg'], ['arches.jpg', 'kite.jpg', 'hill.jpg'], ['kayak.jpg', 'lighthouse.jpg', 'kayak.jpg'], ['chinook.jpg', 'spillway.jpg', 'ladder.jpg'], ['playground.jpg', 'pool.jpg', 'oceanview.jpg'], ['boats.jpg', 'foutains.jpg', 'boatpond.jpg']];
-var imagePaths = ['img/seattlecenter/', 'img/pikeplace/', 'img/aquarium', 'img/gasworks/', 'img/alki/', 'img/locks', 'img/lincoln/', 'img/lakeunion/'];
+var imagePaths = ['img/seattlecenter/', 'img/pikeplace/', 'img/aquarium/', 'img/gasworks/', 'img/alki/', 'img/locks/', 'img/lincoln/', 'img/lakeunion/'];
 
 var headerId = document.getElementById('headerId');
 var firstPlaceText = document.getElementById('firstPlaceText');
