@@ -7,7 +7,7 @@ var storyArray = JSON.parse(stringifiedArray);
 var imageArray = ['img/seattlecenter/seattle_center.jpg', 'img/pikeplace/pike_place.jpg', 'img/aquarium/aquarium.jpg', 'img/gasworks/gasworks.jpg', 'img/alki/beach.jpg', 'img/locks/locks.jpg', 'img/lincoln/foresttrail.jpg', 'img/lakeunion/mohai.jpg'];
 var placeNamesArray = ['Seattle Center', 'Pike Place', 'The Aquarium', 'Gasworks', 'Alki Beach', 'The Locks', 'Lincoln Park', 'Lake Union'];
 var imageArraySubPlaces =[['fountain.jpeg', 'seattle_center.jpg', 'sonicbloom.jpg'], ['pig,jpg', 'magic_market.jpeg', 'flowers.jpeg'], ['jellyfish.jpg', 'seals.jpg', 'octopus.jpg'], ['arches.jpg', 'kite.jpg', 'hill.jpg'], ['kayak.jpg', 'lighthouse.jpg', 'kayak.jpg'], ['chinook.jpg', 'spillway.jpg', 'ladder.jpg'], ['playground.jpg', 'pool.jpg', 'oceanview.jpg'], ['boats.jpg', 'foutains.jpg', 'boatpond.jpg']];
-var imagePaths = ['img/seattlecenter/', 'img/pikeplace/', 'img/aquarium', 'img/gasworks/', 'img/alki/', 'img/locks', 'img/lincoln/', 'img/lakeunion/'];
+var imagePaths = ['img/seattlecenter/', 'img/pikeplace/', 'img/aquarium/', 'img/gasworks/', 'img/alki/', 'img/locks/', 'img/lincoln/', 'img/lakeunion/'];
 
 var headerId = document.getElementById('headerId');
 var firstPlaceText = document.getElementById('firstPlaceText');
@@ -43,14 +43,14 @@ thirdPlaceText.textContent = 'Finally ' +userName+' '+currentAvatar+' went to ' 
 console.log(userName, currentAvatar, placesGone);
 
 firstPlace.src = imageArray[placesGone[0]];
-firstPlace1.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][0];
-firstPlace2.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][1];
-firstPlace3.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][2];
+// firstPlace1.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][0];
+// firstPlace2.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][1];
+// firstPlace3.src = imagePaths[placesGone[0]]+imageArraySubPlaces[placesGone[0]][2];
 secondPlace.src = imageArray[placesGone[1]];
-secondPlace1.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][0];
-secondPlace2.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][1];
-secondPlace3.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][2];
+// secondPlace1.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][0];
+// secondPlace2.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][1];
+// secondPlace3.src = imagePaths[placesGone[1]]+imageArraySubPlaces[placesGone[1]][2];
 thirdPlace.src = imageArray[placesGone[2]];
-thirdPlace1.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][0];
-thirdPlace2.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][1];
-thirdPlace3.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][2];
+// thirdPlace1.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][0];
+// thirdPlace2.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][1];
+// thirdPlace3.src = imagePaths[placesGone[2]]+imageArraySubPlaces[placesGone[2]][2];
