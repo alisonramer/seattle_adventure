@@ -95,7 +95,7 @@ function setDestination(event){
   if (destinationChoice === 'center'){
     for (var j = 0; j < storyArray.length; j++) {
       if(storyArray[j].name === userName){
-        storyArray[j].placesGone.push(leftRandom);
+        storyArray[j].placesGone.push(centerRandom);
       }
     }
     window.location.href = destinationArray[centerRandom];
@@ -104,7 +104,7 @@ function setDestination(event){
   if (destinationChoice === 'right'){
     for (var k = 0; k < storyArray.length; k++) {
       if(storyArray[k].name === userName){
-        storyArray[k].placesGone.push(leftRandom);
+        storyArray[k].placesGone.push(rightRandom);
       }
     }
     window.location.href = destinationArray[rightRandom];
