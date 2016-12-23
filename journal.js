@@ -35,10 +35,10 @@ for (var i = 0; i < storyArray.length; i++) {
   }
 }
 
-headerId.textContent = userName+' '+currentAvatar+' has been to many places today!'
-firstPlaceText.textContent = 'First '+userName+' '+currentAvatar+ ' went to ' +placeNamesArray[placesGone[0]]+'!';
-secondPlaceText.textContent = 'Then '+userName+' '+currentAvatar+' went to ' +placeNamesArray[placesGone[1]]+'!';
-thirdPlaceText.textContent = 'Finally ' +userName+' '+currentAvatar+' went to ' +placeNamesArray[placesGone[2]]+'!';
+headerId.textContent = 'What an adventure! The  '+currentAvatar+' has been to many places today.'
+firstPlaceText.textContent = 'First the  '+currentAvatar+ ' went to ' +placeNamesArray[placesGone[0]]+'!';
+secondPlaceText.textContent = 'Then the   '+currentAvatar+' went to ' +placeNamesArray[placesGone[1]]+'!';
+thirdPlaceText.textContent = 'Finally the  '+currentAvatar+' went to ' +placeNamesArray[placesGone[2]]+'!';
 
 console.log(userName, currentAvatar, placesGone);
 
