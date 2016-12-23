@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Seattle Adventure</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
+    <title>Seattle Adventure</title>
   </head>
   <body>
     <div id="background">
@@ -16,16 +17,19 @@
         <li><a href="our-team.html">Our Team</a></li>
       </ul>
     </header>
+
     <main>
-      <h1>Welcome!</h1>
-      <p>Let's embark on an exciting adventure. </br> You will get to choose where you go and what you do.</p>
-      <form id="nameForm" action="index.html" method="post">
-        <fieldset>
-          <label for="name">First, what is your name?</label>
-          <input type="text" name="name" id="nameInput" placeholder="your name" required="true">
-          <button type="submit">Let's go!</button>
-        </fieldset>
-      </form>
+      <div id="welcomeBox">
+        <h1>Welcome!</h1>
+        <p>Let's embark on an exciting adventure. </br> You will get to choose where you go and what you do.</p>
+        <form id="nameForm" action="index.html" method="post">
+          <fieldset>
+            <label for="name">First, what is your name?</label>
+            <input type="text" name="name" id="nameInput" placeholder="your name" required="true">
+            <button type="submit">Let's go!</button>
+          </fieldset>
+        </form>
+      </div>
     </main>
     <footer><p>Seattle Adventure Story &copy; 2016</p></footer>
     <script type="text/javascript" src="app.js"></script>
