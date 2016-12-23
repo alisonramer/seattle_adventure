@@ -32,7 +32,7 @@ for (var i = 0; i < storyArray.length; i++) {
 
 // var headerTextElement = document.getElementById('headerTextElement');
 
-document.getElementById('headerTextElement').textContent = currentAvatar+' has escaped from the Zoo! Where do you want to go?';
+document.getElementById('headerTextElement').textContent = 'Hello '+currentAvatar+'! Where do you want to go?';
 
 // FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
