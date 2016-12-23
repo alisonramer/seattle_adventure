@@ -16,7 +16,7 @@ header {
   width: 400px;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid #5CA4A9;
+  border: 3px solid #5CA4A9;
   color: #5CA4A9;
   font-family: 'Archivo Black', sans-serif;
 }
@@ -44,6 +44,18 @@ a:visited{
   background-size: cover;
   max-height: 70%;
   background-position: center;
+}
+
+#backButton {
+  text-align: center;
+  padding: 30px;
+
+}
+
+#zooButton {
+  text-align: center;
+  padding: 30px;
+
 }
 
 main {
@@ -87,11 +99,14 @@ fieldset input {
 button {
   padding: 5px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 18px;
   margin-left: 3px;
+  background-color: #E6EBE0;
+
 }
 button:hover {
   background-color: #ED6A5A;
+
 }
 
 footer {
