@@ -31,7 +31,15 @@ padding-bottom: 0%;
 }
 #backButton {
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
 }
+
+button:hover {
+  background-color: #ED6A5A;
+}
+
 h2 {
   font-size: 35px;
   text-align: left;

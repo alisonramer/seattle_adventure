@@ -19,7 +19,7 @@ for (var i = 0; i < storyArray.length; i++) {
 
 avatarImageId.src = '../img/avatars/' +currentAvatar +'.png';
 console.log(currentAvatar, avatarImageId.src);
-headerId.textContent = currentAvatar+' has gone to ' +placeNamesArray[heroImageId.alt];
+headerId.textContent = 'The '+currentAvatar+' has gone to ' +placeNamesArray[heroImageId.alt];
 
 function backToChoose(event) {
   event.preventDefault();
